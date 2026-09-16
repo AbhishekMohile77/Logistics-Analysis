@@ -11,4 +11,4 @@ This project develops a cloud-based logistics analytics platform that ingests lo
    - Support predictive logistics analytics
 
 3. Architecture
-![Architecture](assets/pro_architecture.png)
+<img src="assets/pro_architecture.png" alt="Architecture" width="400">
