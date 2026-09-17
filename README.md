@@ -16,7 +16,7 @@ This project develops a cloud-based logistics analytics platform that ingests lo
 
 ### 4. Architecture Components
 #### I. Dataset
-The dataset is obtained from <a href="https://www.kaggle.com/datasets/yogape/logistics-operations-database?resource=download">kaggle</a>
+   The dataset is obtained from <a href="https://www.kaggle.com/datasets/yogape/logistics-operations-database?resource=download">kaggle</a>
 
 Data includes: Drivers, Trucks, Customers, Routes, Loads, Trips, Fuel purchases, Maintenance, Delivery events, Safety incidents, Truck utilization
 
@@ -40,4 +40,10 @@ Utilizing SQL techniques such as:
 - VIEWS
 to generate data insights
 
-#### IV. 
+#### IV. Business Insights
+- Fleet : Fleet Utilization, Total Miles
+- Drivers : Active Drivers, Trips per Driver
+- Customers : Revenue, Contributions
+- Safety : Incidents, Damages
+
+### 5. Grafana Dashboards
