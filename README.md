@@ -47,3 +47,4 @@ to generate data insights
 - Safety : Incidents, Damages
 
 ### 5. Grafana Dashboards
+![Video](./grafana/logisticsDash56.gif)
