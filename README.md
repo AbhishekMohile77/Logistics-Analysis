@@ -97,7 +97,5 @@ ML Feasibility Assessment
 | Logistic Regr|      53.42%    |      55.35%     |    81.67%    |  65.98%  |      0.501    |
 | Random Forest|      54.39%    |      55.33%     |    91.05%    |  68.83%  |      0.492    |
 
-> **Conclusion:** ROC-AUC values close to 0.50 indicated that the available dataset did not contain
-sufficient predictive signal for reliable delivery-delay prediction.
- The ML component was therefore treated as a feasibility assessment rather than proceeding with model deployment.
+> **Conclusion:** ROC-AUC values close to 0.50 indicated that the available dataset did not contain sufficient predictive signal for reliable delivery-delay prediction. The ML component was therefore treated as a feasibility assessment rather than proceeding with model deployment.
 ```
