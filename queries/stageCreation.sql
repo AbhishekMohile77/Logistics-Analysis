@@ -23,7 +23,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/drivers.csv',
 		'ap-south-1'
 	)
@@ -48,7 +48,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/customers.csv',
 		'ap-south-1'
 	)
@@ -77,7 +77,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/delivery_events.csv',
 		'ap-south-1'
 	)
@@ -111,7 +111,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/facilities.csv',
 		'ap-south-1'
 	)
@@ -142,7 +142,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/fuel_purchases.csv',
 		'ap-south-1'
 	)
@@ -178,7 +178,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/loads.csv',
 		'ap-south-1'
 	)
@@ -209,7 +209,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/maintenance_records.csv',
 		'ap-south-1'
 	)
@@ -238,7 +238,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/routes.csv',
 		'ap-south-1'
 	)
@@ -272,7 +272,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/safety_incidents.csv',
 		'ap-south-1'
 	)
@@ -299,7 +299,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/trailers.csv',
 		'ap-south-1'
 	)
@@ -329,7 +329,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/trips.csv',
 		'ap-south-1'
 	)
@@ -359,7 +359,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/truck_utilization_metrics.csv',
 		'ap-south-1'
 	)
@@ -389,7 +389,7 @@ SELECT aws_s3.table_import_from_s3(
 	'',
 	'(FORMAT csv, HEADER true)',
 	aws_commons.create_s3_uri(
-		'chariot-dts',
+		'<bucket_name>',
 		'logisticsSQLGrafana/trucks.csv',
 		'ap-south-1'
 	)
