@@ -1,5 +1,5 @@
 # Cloud Logistics Operations Analytics Platform
-End-to-end logistics analytics platform using Amazon S3, AWS RDS PostgreSQL, SQL, Grafana, and machine learning to analyze fleet, driver and operational performance.
+End-to-end logistics analytics platform using Amazon S3, AWS RDS PostgreSQL, SQL, Grafana to analyze fleet, driver and operational performance along with AWS SageMaker ML feasibility analysis.
 
 ### 1. Project Overview
 This project develops a cloud-based logistics analytics platform that ingests logistics operations data from Amazon S3 into AWS RDS PostgreSQL, performs data validation and analytical transformations using SQL, and presents operational KPIs through Grafana dashboards. The platform is designed to support fleet, driver, customer, and maintenance performance analysis, with a machine-learning layer for predictive operational insights.
@@ -48,3 +48,54 @@ to generate data insights
 
 ### 5. Grafana Dashboards
 ![Video](./grafana/logisticsDash56.gif)
+
+
+## Machine Learning — Amazon SageMaker
+
+The project includes a machine-learning feasibility assessment using **Amazon SageMaker** to evaluate whether the available logistics data could support delivery-delay prediction.
+
+- Loaded the feature-engineered logistics dataset from Amazon S3 into a SageMaker environment
+- Additional EDA and feature engineering confirmed minimal separation between delayed and non-delayed deliveries
+- Evaluated Logistic Regression and Random Forest models for delivery-delay prediction
+- ML model development was intentionally discontinued rather than overfitting or deploying an unreliable prediction model
+- Detailed process are documented in the [`ml_feasibility_notebooks`](ml_feasibility_notebooks/) folder.
+
+### ML Workflow
+
+```text
+Amazon S3
+    │
+    ▼
+Feature-Engineered Dataset
+    │
+    ▼
+Amazon SageMaker
+    │
+    ├── Data Preparation
+    │      ├── Train / Validation Split
+    │      ├── Missing Value Handling
+    │      └── Categorical Encoding
+    │
+    ├── Logistic Regression
+    │
+    └── Random Forest
+    │
+    ▼
+Model Evaluation
+    ├── Accuracy + Precision + Recall + F1 Score + ROC-AUC
+    ▼
+ML Feasibility Assessment
+```
+
+### I would also add a small results table
+
+```markdown
+### Model Results
+
+|    Model     |    Accuracy    |    Precision    |    Recall    |    F1    |    ROC-AUC    |
+|    - - -     |     - - - :    |      - - - :    |    - - - :   | - - - :  |    - - - :    |
+| Logistic Regr|      53.42%    |      55.35%     |    81.67%    |  65.98%  |      0.501    |
+| Random Forest|      54.39%    |      55.33%     |    91.05%    |  68.83%  |      0.492    |
+
+> **Conclusion:** ROC-AUC values close to 0.50 indicated that the available dataset did not contain sufficient predictive signal for reliable delivery-delay prediction. The ML component was therefore treated as a feasibility assessment rather than proceeding with model deployment.
+```
